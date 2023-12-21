@@ -1,5 +1,6 @@
 ﻿using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Domain.Entities;
+using ETicaretAPI.Persistance.Contexts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,8 @@ namespace ETicaretAPI.Persistance.Repositories
 {
     public class ProductReadRepository : ReadRepository<Product>, IProductReadRepository
     {
+        public ProductReadRepository(ETicaretAPIDbContext context) : base(context)
+        {
+        }
     }
 }
