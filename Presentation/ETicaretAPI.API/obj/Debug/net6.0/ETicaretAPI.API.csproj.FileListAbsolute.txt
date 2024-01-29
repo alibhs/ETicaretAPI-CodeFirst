@@ -52,3 +52,4 @@ C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.AP
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastucture.dll
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastucture.pdb
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.API.staticwebassets.runtime.json

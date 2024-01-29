@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "K8M4uZo9UoL6PiBpMUZfd6FD4YDLN0dDDlTYfg9nLw8=",
+  "Hash": "fvzOiSJkq05hiEOp54DHi8DKQhOoie/DU2jZxXm1elo=",
   "Source": "ETicaretAPI.API",
   "BasePath": "_content/ETicaretAPI.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "ETicaretAPI.API\\wwwroot",
+      "Source": "ETicaretAPI.API",
+      "ContentRoot": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\158051520.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "resorce/product-images/158051520.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resorce\\product-images\\158051520.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\818694264.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "resorce/product-images/818694264.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resorce\\product-images\\818694264.png"
+    },
+    {
+      "Identity": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\917584353.png",
+      "SourceId": "ETicaretAPI.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\",
+      "BasePath": "_content/ETicaretAPI.API",
+      "RelativePath": "resorce/product-images/917584353.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\resorce\\product-images\\917584353.png"
+    }
+  ]
 }
