@@ -1,16 +1,16 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\158051520.png",
-      "PackagePath": "staticwebassets\\resorce\\product-images\\158051520.png"
+      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Screenshot4.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\Screenshot4.png"
     },
     {
-      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\818694264.png",
-      "PackagePath": "staticwebassets\\resorce\\product-images\\818694264.png"
+      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\cors-gencay.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\cors-gencay.png"
     },
     {
-      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resorce\\product-images\\917584353.png",
-      "PackagePath": "staticwebassets\\resorce\\product-images\\917584353.png"
+      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\dsvusa.png",
+      "PackagePath": "staticwebassets\\resource\\product-images\\dsvusa.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ETicaretAPI.API.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -17,13 +17,23 @@ namespace ETicaretAPI.API.Controllers
         readonly private IProductReadRepository _productReadRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
         readonly IFileService _fileService;
+        readonly IFileWriteRepository _fileWriteRepository;
+        readonly IFileReadRepository _fileReadRepository;
+        readonly IProductImageReadRepository _productImageReadRepository;
+        readonly IProductImageWriteRepository  _productImageWriteRepository;
+        readonly IInvoiceFileReadRepository _invoiceFileReadRepository;
+        readonly IInvoiceFileWriteRepository _invoiceFileWriteRepository;
 
-        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService)
+        public ProductsController(IProductWriteRepository productWriteRepository, IProductReadRepository productReadRepository, IWebHostEnvironment webHostEnvironment, IFileService fileService, IProductImageReadRepository productImageReadRepository = null, IProductImageWriteRepository productImageWriteRepository = null, IInvoiceFileReadRepository invoiceFileReadRepository = null, IInvoiceFileWriteRepository invoiceFileWriteRepository = null)
         {
             _productWriteRepository = productWriteRepository;
             _productReadRepository = productReadRepository;
             this._webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
+            _productImageReadRepository = productImageReadRepository;
+            _productImageWriteRepository = productImageWriteRepository;
+            _invoiceFileReadRepository = invoiceFileReadRepository;
+            _invoiceFileWriteRepository = invoiceFileWriteRepository;
         }
         [HttpGet]
         public async Task<IActionResult> Get([FromQuery] Pagination pagination)
@@ -111,10 +121,25 @@ namespace ETicaretAPI.API.Controllers
         //    return Ok();
         //}
 
-        [HttpPost]
+        [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-            _fileService.UploadAsync("resource/product-images",Request.Form.Files);
+           var datas = await _fileService.UploadAsync("resource/product-images",Request.Form.Files);
+            //await _productImageWriteRepository.AddRangeAsync(datas.Select(d=> new ProductImageFile()
+            // {
+            //        FileName= d.fileName,
+            //        Path= d.path,
+            // }).ToList());
+            // await _productImageWriteRepository.SaveAsync();
+
+            //await _invoiceFileWriteRepository.AddRangeAsync(datas.Select(d => new InvoiceFile()
+            //{
+            //    FileName = d.fileName,
+            //    Path = d.path,
+            //    Price = new Random().Next()
+            //}).ToList());
+            //await _invoiceFileWriteRepository.SaveAsync();
+
             return Ok();
         }
     }

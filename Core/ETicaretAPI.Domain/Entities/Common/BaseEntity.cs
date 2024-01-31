@@ -10,6 +10,7 @@ namespace ETicaretAPI.Domain.Entities.Common
     {
         public Guid Id { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+
+       virtual public DateTime UpdatedDate { get; set; } //başka kalıtım alan entitylerde migrate edilmesini istemeyebiliriz ondan virtual olarak işaretledik.
     }
 }
