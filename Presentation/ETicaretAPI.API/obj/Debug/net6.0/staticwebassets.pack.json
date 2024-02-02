@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\invoice\\cors-gencay.png",
+      "PackagePath": "staticwebassets\\resource\\invoice\\cors-gencay.png"
+    },
+    {
       "Id": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\wwwroot\\resource\\product-images\\Screenshot4.png",
       "PackagePath": "staticwebassets\\resource\\product-images\\Screenshot4.png"
     },
