@@ -53,3 +53,9 @@ C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.AP
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastucture.dll
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastucture.pdb
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.API.staticwebassets.runtime.json
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Azure.Core.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Azure.Storage.Common.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\System.IO.Hashing.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\System.Memory.Data.dll

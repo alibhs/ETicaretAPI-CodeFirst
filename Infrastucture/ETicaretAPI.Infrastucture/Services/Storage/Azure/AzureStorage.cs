@@ -47,7 +47,7 @@ namespace ETicaretAPI.Infrastucture.Services.Storage.Azure
         {
             _blobContainerClient = _blobServiceClient.GetBlobContainerClient(containerName);
             await _blobContainerClient.CreateIfNotExistsAsync();
-            await _blobContainerClient.SetAccessPolicyAsync(PublicAccessType.BlobContainer);
+            //await _blobContainerClient.SetAccessPolicyAsync(PublicAccessType.BlobContainer); //hataya sebebiyet verdi azure files private
 
             List<(string fileName, string pathOrContainerName)> datas = new();
             foreach (IFormFile file in files)
