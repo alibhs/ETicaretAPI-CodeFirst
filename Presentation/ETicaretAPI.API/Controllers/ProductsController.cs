@@ -125,25 +125,22 @@ namespace ETicaretAPI.API.Controllers
         //}
 
         [HttpPost("[action]")]
-        public async Task<IActionResult> Upload()
+        public async Task<IActionResult> Upload(string id)
         {
-           var datas = await _storageService.UploadAsync("files", Request.Form.Files);
-            //var datas = await _fileService.UploadAsync("resource/product-images",Request.Form.Files);
-            await _productImageWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile()
-            {
-                FileName = d.fileName,
-                Path = d.pathOrContainerName,
-                Storage = _storageService.StorageName, 
-            }).ToList());
-            await _productImageWriteRepository.SaveAsync();
+          List<(string fileName,string pathOrContainerName)> result =  await _storageService.UploadAsync("photo-images", Request.Form.Files);
 
-            //await _invoiceFileWriteRepository.AddRangeAsync(datas.Select(d => new InvoiceFile()
-            //{
-            //    FileName = d.fileName,
-            //    Path = d.path,
-            //    Price = new Random().Next()
-            //}).ToList());
-            //await _invoiceFileWriteRepository.SaveAsync();
+         Product product =  await _productReadRepository.GetByIdAsync(id);
+
+            await _productImageWriteRepository.AddRangeAsync(result.Select(r => new ProductImageFile
+            {
+                FileName = r.fileName,
+                Path = r.pathOrContainerName,
+                Storage = _storageService.StorageName,
+                Products = new List<Product>() { product }
+
+            }).ToList());
+
+           await _productImageWriteRepository.SaveAsync();
 
             return Ok();
         }
