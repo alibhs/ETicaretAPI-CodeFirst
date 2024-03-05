@@ -59,3 +59,7 @@ C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.AP
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\System.IO.Hashing.dll
 C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\System.Memory.Data.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\MediatR.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Ali\Desktop\ETicaret-Uygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll

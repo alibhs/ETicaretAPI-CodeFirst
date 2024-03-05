@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ETicaretAPI.Application.Features.Queries.GetAllProduct
+namespace ETicaretAPI.Application.Features.Queries.Product.GetAllProduct
 {
     public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQueryRequest, GetAllProductQueryResponse>
     {
         readonly IProductReadRepository _productReadRepository; //IoC ile Applicaton Katmanı içindeki bu soyut sınıftan infrastucture katmanındaki somut sınıfa erişim sağladık.    
         public GetAllProductQueryHandler(IProductReadRepository productReadRepository)
         {
-            _productReadRepository = productReadRepository; 
+            _productReadRepository = productReadRepository;
         }
         public Task<GetAllProductQueryResponse> Handle(GetAllProductQueryRequest request, CancellationToken cancellationToken)
         {
@@ -31,7 +31,7 @@ namespace ETicaretAPI.Application.Features.Queries.GetAllProduct
                 })
                 .Skip(request.Page * request.Size)
                 .Take(request.Size)
-                .ToList(); 
+                .ToList();
 
             var response = new GetAllProductQueryResponse
             {

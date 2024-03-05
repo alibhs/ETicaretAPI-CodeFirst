@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "Otwa/BIYL8gI4N+983v2Hy9JDIEZgB8kvGR63Zw+RS3f3+VncDFTKiG3UHT+NCbp3zdTZg/UgfePWHn6+FTwHQ==",
-  "success": false,
+  "dgSpecHash": "9etNpFlIT5oBuKDc2/AROT49TNs7udIKftcGynQlmCHU9FTootYVimxJbboDJIZirfOhqJVrB1e8XBrHXEbUXA==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Ali\\Desktop\\ETicaret-Uygulamasi\\ETicaretAPI\\Infrastucture\\ETicaretAPI.Persistance\\ETicaretAPI.Persistance.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ali\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
@@ -24,7 +24,7 @@
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\6.0.0\\microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
-    "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
@@ -40,15 +40,5 @@
     "C:\\Users\\Ali\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\Ali\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.DependencyInjection.Abstractions from 7.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n ETicaretAPI.Persistance -> ETicaretAPI.Application -> MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 7.0.0) \r\n ETicaretAPI.Persistance -> Microsoft.Extensions.DependencyInjection.Abstractions (>= 6.0.0)",
-      "libraryId": "Microsoft.Extensions.DependencyInjection.Abstractions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

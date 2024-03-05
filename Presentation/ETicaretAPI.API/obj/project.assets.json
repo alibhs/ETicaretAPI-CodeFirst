@@ -854,7 +854,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.25",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Json": "6.0.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "7.0.0",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.22"
         },
         "compile": {
