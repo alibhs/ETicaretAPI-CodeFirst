@@ -6,6 +6,9 @@ using ETicaretAPI.Infrastucture.Services.Storage.Azure;
 using ETicaretAPI.Infrastucture.Services.Storage.Local;
 using ETicaretAPI.Persistance;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,6 +37,23 @@ builder.Services.AddControllers(options => options.Filters.Add<ValidationFilters
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer("Admin",options =>
+    {
+        options.TokenValidationParameters = new()
+        {
+            ValidateAudience = true, //Oluþturulacak token deðerini kimlerin/hangi originlerin/sitelerin kullanýcý belirlediðimiz deðerdir.
+            ValidateIssuer = true, //Oluþturulacak token deðerinin kimin daðýttýðýný ifade edeceðimiz alandýr.
+            ValidateIssuerSigningKey = true, //Üretilecek token deðerinin sürecini kontrol edecek olan doðrulamadýr.
+            ValidateLifetime = true, //Oluþtuurlan token deðerinin süresini kontrol edecek deðerdir.
+
+            ValidAudiences = new List<string> { builder.Configuration["Token:Audience"] },
+            ValidIssuer = builder.Configuration["Token:Issuer"],
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"]))
+
+        };
+    });
     
 var app = builder.Build();
 
@@ -51,6 +71,8 @@ app.UseCors();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseAuthentication();
 
 app.MapControllers();
 
